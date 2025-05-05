@@ -1,6 +1,7 @@
 #include <stdio.h>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <time.h>
 int main () {
 	printf("Hello World!\n");
@@ -53,5 +54,18 @@ int main () {
 	logMessage("Displayed Hello World!");
 
 >>>>>>> branch3
+=======
+
+void printAsciiBanner() {
+	printf("\n*****************************\n");
+        printf("*     WELCOME TO GIT LAB    *\n");
+        printf("*****************************\n");
+}
+
+int main () {
+	printAsciiBanner();
+	printf("Hello World!");
+
+>>>>>>> branch4
 	return 0;
 }
