@@ -1,5 +1,16 @@
 #include <stdio.h>
-int main () {
-	printf("Hello World!");
+
+int main (int argc, char *argv[]) {
+	printf("Hello World!\n");
+
+	if (argc > 1) {
+		printf("You entered %d arguments:\n", argc - 1);
+		for (int i = 1; i < argc; i++) {
+			printf("Arg %d: %s\n", i, argv[i]);
+		}
+	}else {
+		printf("No additional command-line arguments provided.\n");
+	}
+
 	return 0;
 }
