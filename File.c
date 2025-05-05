@@ -1,5 +1,6 @@
 #include <stdio.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <time.h>
 int main () {
 	printf("Hello World!\n");
@@ -36,5 +37,21 @@ int main () {
 		default: printf("Invalid choice.\n");
 	}
 >>>>>>> branch2
+=======
+
+void logMessage(const char* msg) {
+	File *file = fopen("log.txt", "a");
+	if(file != NULL) {
+		fprintf(file, "%s\n", msg);
+		fclose(file);
+	}
+}
+int main () {
+	printf("Hello World!\n");
+
+	logMessage("Program started.");
+	logMessage("Displayed Hello World!");
+
+>>>>>>> branch3
 	return 0;
 }
