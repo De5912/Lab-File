@@ -1,8 +1,4 @@
 #include <stdio.h>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 #include <time.h>
 int main () {
 	printf("Hello World!\n");
@@ -12,7 +8,6 @@ int main () {
 	time(&now);
 	printf("Compiled on: %s", ctime(&now));
 
-=======
 
 void showMenu() {
 	printf("\n==== MENU ====\n");
@@ -38,8 +33,6 @@ int main () {
 		case 3: printf("Goodbye!\n"); break;
 		default: printf("Invalid choice.\n");
 	}
->>>>>>> branch2
-=======
 
 void logMessage(const char* msg) {
 	File *file = fopen("log.txt", "a");
@@ -52,10 +45,7 @@ int main () {
 	printf("Hello World!\n");
 
 	logMessage("Program started.");
-	logMessage("Displayed Hello World!");
-
->>>>>>> branch3
-=======
+	logMessage("Displayed Hello World");
 
 void printAsciiBanner() {
 	printf("\n*****************************\n");
@@ -66,9 +56,6 @@ void printAsciiBanner() {
 int main () {
 	printAsciiBanner();
 	printf("Hello World!");
-
->>>>>>> branch4
-=======
 
 int main (int argc, char *argv[]) {
 	printf("Hello World!\n");
@@ -81,7 +68,5 @@ int main (int argc, char *argv[]) {
 	}else {
 		printf("No additional command-line arguments provided.\n");
 	}
-
->>>>>>> branch5
 	return 0;
 }
