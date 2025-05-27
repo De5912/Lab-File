@@ -68,5 +68,42 @@ int main (int argc, char *argv[]) {
 	}else {
 		printf("No additional command-line arguments provided.\n");
 	}
-	return 0;
 }
+int main(int argc, char *argv[]) {
+    printAsciiBanner();
+    printf("Hello World!\n");
+    printf("Program by: Dev\n");
+
+    time_t now;
+    time(&now);
+    printf("Compiled on: %s", ctime(&now));
+
+    logMessage("Program started.");
+    handleCommandLineArgs(argc, argv);
+
+    int choice;
+    do {
+        showMenu();
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Hello, User!\n");
+                logMessage("Said Hello");
+                break;
+            case 2:
+                optionInfo();
+                logMessage("Displayed Info");
+                break;
+            case 3:
+                printf("Goodbye!\n");
+                logMessage("Program exited");
+                break;
+            default: printf("Invalid choice.\n");
+        }
+    } while (choice != 3);
+
+    return 0;
+}
+
